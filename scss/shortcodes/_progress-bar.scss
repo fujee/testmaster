@@ -1,0 +1,141 @@
+
+/* ====================== [ Start progress bar ] ====================== */
+
+.skills-circle {
+
+	.skill {
+		position: relative;
+
+		span {
+			width: 150px;
+			height: 150px;
+			line-height: 150px;
+			border-radius: 50%;
+			background: rgba(255, 255, 255, .1);
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-75px) translateY(-98px);
+			font-size: 40px;
+			font-weight: 300;
+		}
+
+		h6 {
+			font-size: 14px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-top: 20px;
+		}
+	}
+}
+
+.skills-sec {
+
+	.skill-item {
+		margin-bottom: 50px;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	h6 {
+		font-size: 13px;
+		font-weight: 300;
+		font-style: italic;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		margin-bottom: 10px;
+	}
+
+	.skill-progress {
+		height: 7px;
+		background-color: #f7f7f7;
+		position: relative;
+
+		.progres {
+			position: absolute;
+			height: 100%;
+			width: 0;
+			top: 0;
+			left: 0;
+			background-color: #333;
+			transition: all 1.5s;
+
+			&:after {
+				content: attr(data-value);
+				position: absolute;
+				right: 10px;
+				top: -30px;
+				font-size: 20px;
+				font-weight: 100;
+			}
+
+			&:before {
+				content: '';
+				width: 1px;
+				height: 30px;
+				background: #333;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+			}
+		}
+	}
+}
+
+
+.play-button {
+	position: relative;
+	width: 85px;
+	height: 85px;
+	margin: auto;
+	transform: scale(1.3);
+	z-index: 4;
+  }
+  .play-button svg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+  }
+  
+  .circle-fill circle {
+	opacity: 1;
+	fill: rgba(255, 255, 255, .1);
+  }
+  
+  .polygon {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 90px;
+	font-size: 35px;
+	z-index: 2;
+  }
+  .play-button svg.circle-fill {
+	z-index: 1;
+	stroke-dasharray: 322;
+	stroke-dashoffset: 322;
+	transition: all .5s;
+	transform: rotate(-90deg);
+  }
+  .play-button:hover svg.circle-fill {
+	stroke-dashoffset: 38.5;
+  }
+  .play-button svg.circle-track {
+	z-index: 0;
+  }
+
+  .play-button{
+
+	&.color{
+		color: $main-color;
+
+		.circle-fill circle{
+			fill: rgba(177, 151, 119, .2);
+		}
+	}
+  }
+
+/* ====================== [ End progress bar ] ====================== */

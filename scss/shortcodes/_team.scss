@@ -1,0 +1,128 @@
+
+
+/* ====================== [ Start Team ] ====================== */
+
+.team{
+	position: relative;
+
+	.team-container{
+		width: 140%;
+		position: relative;
+
+		&:after{
+			content: '';
+			position: absolute;
+			top: -120px;
+			bottom: -120px;
+			right: 0;
+			width: 80%;
+			background: #f8f4f3;
+			z-index: -1;
+		}
+	}
+
+	.item{
+		padding: 0 15px;
+
+		.img{
+			position: relative;
+			overflow: hidden;
+
+			&:hover{
+
+				&:after{
+					opacity: .5;
+				}
+
+				.social{
+					opacity: 1;
+					left: 0;
+				}
+			}
+
+			&:after{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: #111;
+				opacity: 0;
+				transition: all .4s;
+			}
+
+			.social{
+				position: absolute;
+				top: 0;
+				left: -40px;
+				background-color: #fff;
+				padding: 20px 10px;
+				z-index: 2;
+				opacity: 0;
+				transition: all .4s;
+
+				a{
+					display: block;
+					font-size: 13px;
+					margin-top: 10px;
+					color: $main-color;
+				}
+			}
+		}
+
+		.info{
+			margin-top: 20px;
+			text-align: center;
+
+			h5{
+				font-size: 18px;
+				margin-bottom: 2px;
+			}
+
+			span{
+				color: #777;
+				font-size: 14px;
+			}
+		}
+	}
+
+	.slick-dots{
+		bottom: -40px;
+	}
+
+	.slick-dots li.slick-active button{
+		background: $main-color;
+	}
+
+	.slick-dots li button{
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		opacity: .8;
+
+		&:before{
+			content: '';
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			position: absolute;
+			top: 4px;
+			left: 4px;
+			line-height: 1;
+			background: $main-color;
+			opacity: 1;
+		}
+	}
+
+	.dots-half{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 70%;
+		z-index: -2;
+	}
+}
+
+/* ====================== [ End Team ] ====================== */

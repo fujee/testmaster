@@ -1,0 +1,110 @@
+
+
+/* ====================== [ Start Footer ] ====================== */
+
+.main-footer{
+    padding: 100px 0 0;
+    
+    &.dark{
+        background: #252531;
+        color: #fff;
+    }
+
+    .abot{
+
+        p{
+            font-size: 13px;
+        }
+
+        .social-icon{
+            margin-top: 20px;
+
+            a{
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                text-align: center;
+                font-size: 13px;
+                border: 1px solid rgba(255,255,255,.1);
+                border-radius: 50%;
+                margin-right: 3px;
+                transition: all .4s;
+
+                &:hover{
+                    border-color: $main-color;
+                    color: $main-color;
+                }
+            }
+        }
+    }
+
+    .usful-links{
+
+        ul{
+            margin: 0;
+
+            li{
+                font-size: 13px;
+                margin-bottom: 10px;
+
+                &:hover{
+                    color: $main-color;
+                }
+
+                i{
+                    font-size: 10px;
+                    color: $main-color;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    .fothead{
+        
+        h6{
+            color: $main-color;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .fotcont{
+
+        .fothead{
+        
+            h6{
+                position: relative;
+                padding-bottom: 10px;
+
+                &:after{
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    width: 100%;
+                    background: rgba(255,255,255,.1);
+                    height: 1px;
+                }
+            }
+        }
+
+        p{
+            font-size: 13px;
+        }
+    }
+
+    .sub-footer{
+        padding: 30px 0;
+        margin-top: 50px;
+        border-top: 1px solid rgba(255,255,255,.02);
+
+        p{
+            font-size: 13px;
+        }
+    }
+}
+
+/* ====================== [ End Footer ] ====================== */

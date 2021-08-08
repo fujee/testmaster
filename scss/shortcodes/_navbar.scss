@@ -1,0 +1,191 @@
+
+
+/* ====================== [ Start navbar ] ====================== */
+
+.navbar{
+	position: absolute;
+	left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+	width: 100%;
+    background: transparent;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+	z-index: 999;
+	min-height: 80px;
+
+	.icon-bar{
+		color: #fff;
+	}
+
+	.navbar-nav{
+  
+		.nav-link{
+			font-size: 13px;
+			font-weight: 400;
+			color: #fff;
+			letter-spacing: 1px;
+            padding: 15px 7px;
+            margin: 10px;
+		}
+
+		.dropdown-menu{
+			padding: 10px 0;
+			border: 0;
+			box-shadow: $dark-shadow;
+		}
+
+		.dropdown-item{
+			font-size: 13px;
+			padding: 10px 20px;
+			opacity: .9;
+
+			&:hover{
+				background: transparent;
+				color: $main-color;
+			}
+		}
+    }
+
+    .dropdown-menu{
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        border-radius: 0;
+        transform: translateY(20px);
+        transition: all .4s;
+    
+        &.show{
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    
+        .dropdown-item{
+            transition: all .4s;
+            padding: 10px 25px;
+            position: relative;
+    
+            &:after{
+                content: '';
+                width: 0px;
+                height: 1px;
+                background: $main-color;
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                transition: all .4s;
+            }
+    
+            &:hover{
+                padding-left: 30px;
+                
+                &:after{
+                    width: 10px;
+                }
+            }
+        }
+    }
+    
+    .social-icon{
+        padding: 0 20px;
+        border-left: 1px solid rgba(255,255,255,.1);
+
+        a{
+            color: #fff;
+            margin: 0 10px;
+            font-size: 13px;
+        }
+    }
+
+    .search{
+        color: #fff;
+        padding-left: 30px;
+        border-left: 1px solid rgba(255,255,255,.1);
+        
+        .icon{
+            cursor: pointer;
+        }
+
+        .search-form{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            background: rgba(37,37,49,.98);
+            display: none;
+            
+            form{
+                width: 600px;
+                position: absolute;
+                left: calc(50% - 300px);
+                top: 50%;
+                transform: translateY(-50%);
+
+                input{
+                    padding: 15px 0;
+                    font-size: 80px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    text-align: left;
+                    background: transparent;
+                    border: 0;
+                    border-bottom: 2px solid $main-color;
+                }
+            }
+
+            .close{
+                position: absolute;
+                top: 20%;
+                right: 20%;
+                color: #fff;
+                font-size: 60px;
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.light,.nav-scroll{
+	background: #fff;
+	box-shadow: 0px 10px 30px rgba(37,37,49,.1);
+	padding: 0;
+	position: fixed;
+	top: -80px;
+	transition: transform .5s;
+	transform: translateY(80px);
+
+	.icon-bar{
+		color: #222;
+	}
+
+	.navbar-nav{
+
+		.nav-link{
+			color: #222;
+		}
+
+		.logo{
+            width: 100px;
+			padding: 15px 0;
+			color: #111;
+		}
+    }
+    
+    .social-icon{
+        border-left: 1px solid rgba(0,0,0,.1);
+
+        a{
+            color: #000;
+        }
+    }
+
+    .search{
+        color: #000;
+        border-left: 1px solid rgba(0,0,0,.1);
+    }
+}
+
+/* ====================== [ End navbar ] ====================== */

@@ -1,0 +1,87 @@
+
+
+/* ====================== [ Start Heading ] ====================== */
+
+.section-head{
+	position: relative;
+	margin: 0 auto 80px;
+
+	h4{
+		font-weight: 500;
+		font-size: 40px;
+		letter-spacing: 2px;
+	}
+
+	h6{
+		color: $main-color;
+		font-weight: 300;
+		font-size: 17px;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		margin-bottom: 10px;
+	}
+}
+
+.sub-title{
+	color: $main-color;
+	font-family: 'Teko', sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 14px;
+	padding-left: 60px;
+	letter-spacing: 4px;
+	margin-bottom: 15px;
+	position: relative;
+
+	&:before{
+		content: "";
+		width: 50px;
+		height: 1px;
+		background: $main-color;
+		position: absolute;
+		left: 0;
+		top: 50%;
+	}
+}
+
+.extra-title{
+	font-weight: 700;
+}
+
+.tit{
+
+	h6{
+		color: $main-color;
+		font-weight: 400;
+		font-size: 22px;
+	}
+
+	h3{
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+
+	.navs{
+
+		span{
+			padding: 15px 30px;
+			background: #f8f4f3;
+			cursor: pointer;
+
+			&:hover{
+				background: $main-color;
+				color: #fff;
+			}
+		}
+	}
+}
+
+.sm-title{
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+
+/* ====================== [ End Heading ] ====================== */

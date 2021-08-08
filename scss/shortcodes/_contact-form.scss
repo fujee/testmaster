@@ -1,0 +1,116 @@
+
+
+/* ====================== [ Start contact ] ====================== */
+
+.cont-map{
+    position: relative;
+    z-index: 2;
+
+    .contact-form{
+        
+        form{
+            position: relative;
+            top: -50px;
+            right: -50px;
+            padding: 60px 30px;
+            background: #fff;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.05);
+            border: 10px solid #f7f7f7;
+            border-radius: 5px;
+
+            input, textarea{
+                padding: 15px;
+                background: #f7f7f7;
+                border: 0;
+                width: 100%;
+            }
+
+            textarea{
+                height: 160px;
+            }
+        }
+    }
+
+    .contact-map{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 70%;
+        z-index: -1;
+
+        .map{
+            height: 100%;
+        }
+    }
+
+    .contact-form,
+    .contact-map{
+        padding: 0;
+    }
+
+    .bg-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 30%;
+        z-index: -1;
+    }
+}
+
+.contact{
+
+    .info{
+
+        .item{
+            padding: 40px 20px;
+            background: #fff;
+            display: flex;
+
+            .icon{
+                font-size: 30px;
+                color: #999;
+                padding-right: 30px;
+            }
+
+            .cont{
+
+                h6{
+                    font-size: 20px;
+                    color: $main-color;
+                    margin-bottom: 10px;
+                }
+
+                p{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .map-box{
+        padding: 0;
+
+        .map{
+            height: 100%;
+        }
+    }
+
+    .form{
+        padding: 120px 5%;
+
+        input, textarea{
+            padding: 15px;
+            background: #f7f7f7;
+            border: 0;
+            width: 100%;
+        }
+
+        textarea{
+            height: 160px;
+        }
+    }
+}
+
+/* ====================== [ End contact ] ====================== */

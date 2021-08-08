@@ -1,0 +1,159 @@
+
+
+/* ====================== [ Start services ] ====================== */
+
+.services{
+
+	.bord-box{
+		overflow: hidden;
+	}
+
+	.box-top{
+		position: relative;
+		margin-top: -80px;
+		z-index: 4;
+	}
+
+	.feat-top{
+		padding: 100px 80px;
+		position: relative;
+		width: 80%;
+		margin-top: -40px;
+		z-index: 3;
+
+		.notfull{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0%;
+			height: 100%;
+			transition: all .7s cubic-bezier(1, 0, 0.25, 1);
+			transition-delay: .3s;
+
+			&.animated{
+				width: 100%;
+			}
+		}
+	}
+
+	.item-bx{
+		padding: 60px 40px;
+		height: 100%;
+		background-color: #fff;
+		border: 1px solid #eee;
+		border-right: 0;
+		transition: all .4s;
+
+		&:last-of-type{
+			border-right: 1px solid #eee;
+		}
+
+		&:hover{
+			background-color: rgba(0,0,0,.6);
+			color: #fff;
+
+			p{
+				color: #eee;
+			}
+
+			.more{
+				color: $main-color;
+			}
+		}
+
+		.numb{
+			font-size: 60px;
+			margin-bottom: 10px;
+			color: transparent;
+    		-webkit-text-stroke: 1px $main-color;
+		}
+
+		.icon{
+			font-size: 60px;
+			color: $main-color;
+			margin-bottom: 30px;
+		}
+
+		.more{
+			font-size: 20px;
+		}
+
+		&.bg-img{
+			position: relative;
+			border: 0;
+			z-index: 2;
+
+			&:hover{
+
+				&:after{
+					background: rgba(0,0,0,.6);
+				}
+			}
+
+			&:after{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: #fff;
+				transition: all .4s;
+				z-index: -1;
+			}
+		}
+	}
+
+	.item-sm{
+
+		h6{
+			font-weight: 600;
+			font-size: 18px;
+		}
+
+		.numb{
+			font-size: 40px;
+			font-weight: 400;
+			color: $main-color;
+			padding-right: 70px;
+			line-height: 1;
+			position: relative;
+
+			&:after{
+				content: '';
+				position: absolute;
+				right: 10px;
+				bottom: 10px;
+				background: #ddd;
+				width: 50px;
+				height: 1px;
+			}
+		}
+	}
+
+	&.halfbg{
+
+		.background{
+			height: 70vh;
+		}
+
+		.ontop{
+			position: relative;
+			margin-top: -120px;
+			z-index: 3;
+
+			.item-bx{
+
+				&:hover{
+					background: $main-color;
+
+					.numb,.more{
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* ====================== [ End services ] ====================== */
