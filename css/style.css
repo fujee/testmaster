@@ -3858,4 +3858,14 @@ body {
   .imago {
     height: 250px!important;
   }
+
+  .about-img
+  {
+    background-image: url("../img/1.jpg") !important;
+  }
+
+  .contact-img
+  {
+    background-position: right !important;
+  }
 }
