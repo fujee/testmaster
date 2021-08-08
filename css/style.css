@@ -3855,7 +3855,7 @@ body {
 /* ====================== [ End Responsive ] ====================== */
 
 @media only screen and (max-width: 900px) {
-  .imago {
+  .portfolio-img {
     height: 250px!important;
   }
 
