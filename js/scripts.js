@@ -337,7 +337,7 @@ $(function () {
             value: myVal,
             thickness: 5,
             size: 200,
-            fill: { color: "#b19777" }
+            fill: { color: "#bca38a" }
         });
 
     });
