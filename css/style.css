@@ -3461,6 +3461,29 @@ a, span {
 
 /* ====================== [ End Footer ] ====================== */
 /* ====================== [ Start Responsive ] ====================== */
+
+
+
+
+.tm-slide-show {
+  --b: 5px; /* border thickness */
+  --c: #0000 25%,#0a1c36 0; /* define the color here */
+  padding: 30px;
+  background:
+    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--c)) 0    0,
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--c)) 100% 0,
+    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--c)) 0    100%,
+    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--c)) 100% 100%;
+  background-size: 200px 200px; /* adjust border length here */
+  background-repeat: no-repeat;
+  transition: .6s;
+  cursor: pointer;
+}
+
+.tm-slide-show:hover {
+  background-size: 51% 51%;
+}
+
 @media screen and (max-width: 991px) {
   .md-mb10 {
     margin-bottom: 10px; }
