@@ -3484,6 +3484,15 @@ a, span {
   background-size: 51% 51%;
 }
 
+.team-img
+{
+  border: 1px solid;
+  border-radius: 35px;
+  -webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+   -moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+   box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+}
+
 @media screen and (max-width: 991px) {
   .md-mb10 {
     margin-bottom: 10px; }
