@@ -275,21 +275,22 @@ $(function () {
         nextArrow: '.team .next',
         dots: false,
         autoplay: true,
+        mobileFirst:false,
         responsive: [
+            // {
+            //     breakpoint: 1,
+            //     settings: {
+            //         slidesToShow: 3
+            //     }
+            // },
             {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 767,
+                breakpoint: 1619,
                 settings: {
                     slidesToShow: 2
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 600,
                 settings: {
                     slidesToShow: 1
                 }

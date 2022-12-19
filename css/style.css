@@ -2778,6 +2778,7 @@ a, span {
         width: 100%;
         height: 100%;
         background: #111;
+        border-radius: 35px;
         opacity: 0;
         -webkit-transition: all .4s;
         -o-transition: all .4s;
@@ -3944,4 +3945,32 @@ a, span {
 .customImage{
   height: 100%;
   width: auto;
+}
+
+.wrap-anywhere{
+  overflow-wrap: anywhere;
+}
+
+.team .team-container{
+  width: 140%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width:1562px){
+  .team .team-container{
+    width: 90%;
+  } 
+}
+
+@media (max-width:600px){
+  .team .team-container{
+    width: 75%;
+  } 
+}
+
+@media (max-width:480px){
+  .team .team-container{
+    width: 80%;
+  } 
 }
