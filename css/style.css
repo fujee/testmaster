@@ -3486,6 +3486,8 @@ a, span {
 
 .team-img
 {
+  object-fit: cover;
+  height: 350px;
   border: 1px solid;
   border-radius: 35px;
   -webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
