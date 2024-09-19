@@ -5210,3 +5210,17 @@ span.rukovodilac {
   color: #a68968;
   text-decoration: underline;
 }
+
+@media only screen and (max-width: 720px) {
+  #testmaster {
+    margin-bottom: 80px;
+  }
+
+  #phase {
+    padding-top: 300px;
+  }
+
+  #brosura canvas {
+    width: 90%;
+  }
+}
